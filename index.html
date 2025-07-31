@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Plan Your Road Map</title>
+  <title>Plan your Road Map</title>
   <style>
     html, body {
       margin: 0;
@@ -26,42 +26,43 @@
       font-size: 60px;
       text-align: center;
       top: 40%;
-      font-family: 'Orbitron', sans-serif;
+      font-family: sans-serif;
       letter-spacing: 2px;
     }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
 </head>
 <body>
   <div id="tsparticles"></div>
   <div class="hero-text">Plan your Road Map</div>
 
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
   <script>
     tsParticles.load("tsparticles", {
       fullScreen: { enable: false },
+      background: {
+        color: "#0a0a0a"
+      },
       particles: {
-        number: { value: 300 },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: 2 },
+        number: { value: 80 },
+        size: { value: 3 },
         move: {
           enable: true,
-          speed: 1.5,
+          speed: 2,
           direction: "none",
           outModes: { default: "bounce" }
         },
+        opacity: { value: 0.5 },
+        shape: { type: "circle" },
+        color: { value: "#ffffff" }
       },
       interactivity: {
         events: {
           onHover: { enable: true, mode: "repulse" },
+          resize: true
         },
         modes: {
           repulse: { distance: 100, duration: 0.4 }
         }
-      },
-      background: {
-        color: "#0a0a0a"
       }
     });
   </script>
